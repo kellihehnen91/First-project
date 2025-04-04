@@ -7,90 +7,103 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <section>
+    <section id="home" >
       <nav>
-        <img src="./assets/FES.svg" alt="" />
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Discord</a></li>
-          <li><a href="#">Contact Us</a></li>
+        <img class="logo" src="./assets/FES.svg" alt="" />
+        <ul class="nav__links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#discord">Discord</a></li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>
       <header>
-        <div>
-          <h1>Best place to learn how to do everything frontend</h1>
-          <p>
-            Go from being an absolute beginner to a pro with a simplified
-            process.
-          </p>
-          <button>Start now</button>
-        </div>
-        <figure>
-          <img src="./assets/laptop.png" alt="Home page image" />
-        </figure>
-      </header>
+          <div class="row">
+              <div class="home__description">
+                  <h1>Best place to learn how to do everything frontend</h1>
+                  <p class="subheader">
+                      Go from being an absolute beginner to a pro with a simplified
+                      process.
+                    </p>
+                    <button>Start now</button>
+                </div>
+                <figure class="home__img--wrapper" >
+                    <img class="home__img" src="./assets/laptop.png" alt="Home page image" />
+                </figure >
+            </div>
+        </header>
     </section>
+
     <main>
       <section id="about">
         <h2>About</h2>
-        <div class="section__description">
-          <div class="section__description--wrapper">
-            <div>
+        <div class="row">
+          <div class="section__description">
+            <div class="section__description--wrapper">
               <p class="section__description--para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
-                minima vero. Quos totam ea ipsum id natus ad! Repellendus, qui.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Sapiente, error? Reprehenderit vitae, laborum cumque distinctio
+                cupiditate expedita quasi. Esse, inventore? Reiciendis nam
+                consequatur commodi deserunt?
               </p>
               <p class="section__description--para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Mollitia molestias in placeat, vel officiis asperiores deserunt?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Excepturi vitae inventore ipsa harum voluptas eum est
+                consequuntur maiores dolore! Cupiditate, sapiente recusandae!
               </p>
             </div>
+
+            <figure class="about__img--wrapper">
+              <img src="./assets/about.jpg" alt="about" />
+            </figure>
           </div>
         </div>
       </section>
-      <figure>
-        <img src="./assets/about.jpg" alt="about" />
-      </figure>
       <section id="discord">
         <h2>Discord</h2>
-        <figure>
-          <img src="./assets/discord.png" alt="Discord>" />
-        </figure>
-
-        <div>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-            corporis cupiditate veniam ut explicabo quidem tempore molestias.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi culpa
-            neque facere dolores labore praesentium molestiae mollitia autem.
-            Odio libero ex magni.
-          </p>
+        <div class="row">
+          <div class="section__description">
+            <div class="section__description--wrapper">
+              <p class="section__description--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                animi omnis sunt, labore ipsum iusto? Quaerat enim reiciendis ad
+                dolores numquam eius. Fugit obcaecati omnis tempora distinctio
+                veritatis.
+              </p>
+              <p class="section__description--para">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi,
+                deleniti in, officiis harum explicabo impedit quos laboriosam
+                laborum iste, aperiam dicta quia!
+              </p>
+            </div>
+            <figure class="about__img--wrapper">
+              <img src="./assets/discord.png" alt="discord" />
+            </figure>
+          </div>
         </div>
       </section>
-      <section id="contact us">
+      <section id="contact">
         <h2>Contact Us</h2>
         <form action="">
           <span>Email</span>
-          <input type="text" placeholder="janedoe@gmail.com" />
+          <input type="email" placeholder="janedoe@gmail.com" />
           <span>Message</span>
           <textarea
             type="text"
-            placeholder="Please out to me at your earliest convenience to discuss learning this frontend course. Thank you."
+            placeholder="Please reach out to me at your earliest convenience to discuss learning this frontend course. Thank you."
           ></textarea>
+          <button>Contact Us!</button>
         </form>
       </section>
     </main>
     <footer>
-      <img src="./assets/FES.svg" alt="" />
-      <div>
-        <a href="#about">About</a>
-        <a href="#discord">Discord</a>
-        <a href="#contact us">Contact Us</a>
-        <a href="">Courses</a>
+      <img class="footer__logo" src="./assets/FES.svg" alt="" />
+      <div class="footer__links">
+        <a class="footer__link" href="#about">About</a>
+        <a class="footer__link" href="#discord">Discord</a>
+        <a class="footer__link" href="#contact">Contact Us</a>
+        <a class="footer__link" href="#home">Home</a>
       </div>
-      <p>Copyright Frontend Simplified</p>
+      <p class="footer__copyright">Copyright Frontend Simplified</p>
     </footer>
   </body>
 </html>

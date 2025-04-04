@@ -17,20 +17,16 @@ nav {
 
 header {
   background-color: #eadcff;
-  height: calc(100vh - 70px);
-  padding: 24px;
+  min-height: calc(100vh - 70px);
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-h1 {
-  font-size: 40px;
-}
-
-.subheader {
-  font-size: 36px;
-  margin: 16px 0 24px 0;
+img {
+  width: 100%;
+  border-radius: 4px;
 }
 
 button {
@@ -42,32 +38,66 @@ button {
   cursor: pointer;
 }
 
-a {
-  color: #000;
-  font-size: 24px;
-  font-weight: 700;
+p {
+  line-height: 1.5;
 }
 
-.logo {
-  width: 300px;
+h1 {
+  font-size: 72px;
+}
+h2 {
+  padding-top: 16px;
+}
+
+main section,
+footer {
+  padding: 48px o;
+}
+
+.row {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subheader {
+  font-size: 36px;
+  margin: 16px 0 24px 0;
 }
 
 ul {
   display: flex;
 }
 
+a {
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+}
+
 li {
   list-style-type: none;
   padding-left: 16px;
 }
+.logo {
+  width: 300px;
+}
 
-.row {
-  width: 100%;
-  max-width: 1300px;
+.home__description,
+.home__img--wrapper {
+  width: 50%;
+}
+.home__img--wrapper {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
+.home__img {
+  width: 80%;
+  
+}
+
 
 /*
 
@@ -76,18 +106,171 @@ ABOUT
 */
 
 #about {
-  padding: 48px 0;
+  background-color: #f8ffdc;
 }
 
 h2 {
-    font-size: 60px;
-    text-align: center;
-    margin-bottom: 24px;
-
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 24px;
 }
 
 .section__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about__img--wrapper {
+  width: 40%;
+  padding: 0 24px;
+}
+.section__description--wrapper {
+  width: 60%;
+  padding: 0 24px;
+}
+
+.section__description--para {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+/* 
+
+DISCORD
+
+*/
+
+#discord {
+  background-color: #cefeff;
+}
+
+/* 
+
+CONTACT US 
+
+*/
+
+#contact {
+  background-color: #dce9ff;
+}
+
+form {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 24px 24px 24px;
+}
+
+input,
+textarea {
+  padding: 6px 12px;
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+input {
+  height: 40px;
+}
+
+/* 
+
+FOOTER 
+
+*/
+
+footer {
+  background-color: #aaf5ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 24px;
+}
+
+.footer__logo {
+  max-width: 480px;
+  padding: 24px;
+}
+
+.footer__links {
+  margin-bottom: 32px;
+}
+
+.footer__link {
+  padding: 0 16px;
+}
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+
+@media (max-width: 728px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .home__description,
+  .home__img--wrapper {
+    width: 100%;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .home__description {
+    margin-bottom: 24px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+  }
+  h1 {
+    text-align: center;
+    font-size: 60px;
+  }
+
+  .subheader {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .section__description {
+    flex-direction: column;
+  }
+  .section__description--wrapper,
+  .about__img--wrapper {
+    width: 100%;
+  }
+
+  #discord .section__description {
+    flex-direction: column-reverse;
+  }
+  .form {
+    padding: 0 24px;
+  }
+
+  footer {
+    padding: 48px 24px;
+  }
+
+  .footer__logo {
+    max-width: 360px;
+  }
+  .footer__logo {
+    max-width: 400px;
+  }
+
+  .footer__link {
+    padding: 0 8px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__logo {
+    max-width: 320px;
+  }
+
+  .footer__link {
+    font-size: 16px;
+  }
 }
